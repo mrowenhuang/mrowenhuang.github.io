@@ -67524,12 +67524,12 @@ A.X1.prototype={
 $0(){this.a.gb6().a7d()},
 $S:0}
 A.X2.prototype={
-$0(){var s=A.aiU("assets/pdf/eng_cv.pdf")
+$0(){var s=A.aiU("lib/common/pdf/eng_cv.pdf")
 s.download="Owen_CV"
 s.click()},
 $S:0}
 A.X3.prototype={
-$0(){var s=A.aiU("assets/pdf/eng_cv.pdf")
+$0(){var s=A.aiU("lib/common/pdf/eng_cv.pdf")
 s.download="Owen_CV"
 s.click()},
 $S:0}

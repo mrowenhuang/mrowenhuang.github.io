@@ -1,6 +1,6 @@
 import { fadeUp } from '@/lib/animation';
-import { motion } from 'framer-motion';
 import { SpeakerIcon } from 'lucide-react';
+import { motion } from 'motion/react';
 
 export const SectionHeader = ({
   title,

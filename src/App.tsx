@@ -1,6 +1,10 @@
+import { About } from "./components/About";
 import { Hero } from "./components/Hero";
 import { Project } from "./components/Project";
+import { Resume } from "./components/Resume";
+import { Services } from "./components/Services";
 import { Stats } from "./components/Stats";
+import { Testimonial } from "./components/Testimonial";
 
 export const App = () => {
   return (
@@ -8,6 +12,10 @@ export const App = () => {
       <Hero />
       <Stats />
       <Project />
+      <About />
+      <Services />
+      <Resume />
+      <Testimonial />
     </main>
   );
 };

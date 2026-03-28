@@ -28,12 +28,31 @@ export const Hero = () => {
       </motion.h1>
       <motion.div
         variants={fadeUp}
-        className=''
+        className='flex gap-4 mt-2'
       >
-        <Button asChild>
-          <a href="#project">My Project</a>
+        <Button
+          onClick={() => {
+            const projectSection = document.getElementById('projects');
+            if (projectSection) {
+              projectSection.scrollIntoView({
+                behavior: 'smooth',
+              });
+            }
+          }}
+        >
+          My Project
         </Button>
-        <Button variant='outline'>Download CV</Button>
+        <Button
+          variant='outline'
+          onClick={() => {
+            const link = document.createElement('a');
+            link.href = '/my_resume_2.pdf';
+            link.download = 'my_resume_2.pdf';
+            link.click();
+          }}
+        >
+          Download CV
+        </Button>
       </motion.div>
     </motion.section>
   );

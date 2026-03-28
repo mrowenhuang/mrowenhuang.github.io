@@ -21,21 +21,18 @@ import type {
  */
 import {
   Briefcase,
-  Facebook,
   FileText,
+  Github,
   Globe,
   Home,
-  Instagram,
   Layers,
+  Linkedin,
   Mail,
-  MessageCircle,
   Palette,
   Rocket,
   Settings,
   Smartphone,
-  Twitter,
-  User,
-  Youtube,
+  User
 } from 'lucide-react';
 
 const navLinks: LinksType[] = [
@@ -52,79 +49,104 @@ const navLinks: LinksType[] = [
     icon: Settings,
   },
   { label: 'Resume', link: '#resume', icon: FileText },
-  {
-    label: 'Reviews',
-    link: '#testimonials',
-    icon: MessageCircle,
-  },
+  // {
+  //   label: 'Reviews',
+  //   link: '#testimonials',
+  //   icon: MessageCircle,
+  // },
   { label: 'Contact', link: '#contact', icon: Mail },
 ];
 
 const socialLinks: LinksType[] = [
   {
-    icon: Facebook,
-    label: 'Facebook',
-    link: '/#',
+    icon: Linkedin,
+    label: 'LinkedIn',
+    link: 'https://linkedin.com/in/owen-huang-582b12213',
   },
   {
-    icon: Instagram,
-    label: 'Instagram',
-    link: '/#',
+    icon: Github,
+    label: 'Guthub',
+    link: 'https://github.com/mrowenhuang',
   },
-  {
-    icon: Twitter,
-    label: 'Twitter',
-    link: '/#',
-  },
-  {
-    icon: Youtube,
-    label: 'Youtube',
-    link: '/#',
-  },
+  // {
+  //   icon: Twitter,
+  //   label: 'Twitter',
+  //   link: '/#',
+  // },
+  // {
+  //   icon: Youtube,
+  //   label: 'Youtube',
+  //   link: '/#',
+  // },
 ];
 
 const projectsData: ProjectType[] = [
   {
-    imgSrc: '/images/project-ph-1.jpeg',
-    title: 'Full stack music app',
-    tags: ['API', 'Development'],
-    projectLink: 'https://musify-5al0.onrender.com/',
+    imgSrc: './images/lab.svg',
+    title: 'Palm Oil Laboratory App',
+    tags: ['API', 'Development', 'SqfLite', 'OCR'],
+    projectLink: '#',
   },
   {
-    imgSrc: '/images/project-ph-2.jpeg',
-    title: 'Full stack music app',
-    tags: ['API', 'Development'],
-    projectLink: 'https://musify-5al0.onrender.com/',
+    imgSrc: './images/produksi.svg',
+    title: 'Stock Production Calculation App',
+    tags: ['API', 'Development', 'SqfLite', 'OCR'],
+    projectLink: '#',
   },
   {
-    imgSrc: '/images/project-ph-3.jpeg',
-    title: 'Full stack music app',
-    tags: ['API', 'Development'],
-    projectLink: 'https://musify-5al0.onrender.com/',
+    imgSrc: './images/ekspedisi.svg',
+    title: 'Palm Oil Expedition App',
+    tags: ['API', 'Development', 'SqfLite', 'OCR', 'NFC'],
+    projectLink: '#',
   },
   {
-    imgSrc: '/images/project-ph-4.jpeg',
-    title: 'Full stack music app',
-    tags: ['API', 'Development'],
-    projectLink: 'https://musify-5al0.onrender.com/',
+    imgSrc: './images/timesheet.svg',
+    title: 'Timesheet App',
+    tags: ['API', 'Development', 'SqfLite'],
+    projectLink: '#',
+  },
+  {
+    imgSrc: './images/book.svg',
+    title: 'Book App',
+    tags: ['API', 'Development', 'Clean Architecture', 'Bloc', 'Firebase'],
+    projectLink: 'https://github.com/mrowenhuang/clean_architecture_book_app',
+  },
+  {
+    imgSrc: './images/music.svg',
+    title: 'Music App',
+    tags: [
+      'API',
+      'Development',
+      'Clean Architecture',
+      'Bloc',
+      'Firebase',
+      'Hive',
+    ],
+    projectLink: 'https://github.com/mrowenhuang/clean-music-app',
   },
 ];
 
 const education: ExperienceType[] = [
   {
-    year: '2018 – 2020',
+    year: '2022 – 2026',
     title: 'Bachelor of Computer Science',
-    institute: 'National University of Technology',
-    desc: 'Focused on front-end development, UI design, and web application architecture.',
+    institute: 'University of Prima Indoneia',
+    desc: 'Focused on web and mobile development, creating seamless user experiences across all platforms.',
   },
   {
-    year: '2021 – 2022',
-    title: 'Frontend Development Bootcamp',
-    institute: 'Udemy / Online Course',
+    year: '2022 – 2023',
+    title: 'Frontend Development',
+    institute: 'Online Course',
     desc: 'Learned modern JavaScript, React, and responsive UI patterns through real-world projects.',
   },
   {
-    year: '2023',
+    year: '2023 – 2025',
+    title: 'Mobile Frontend Development',
+    institute: 'Online Course',
+    desc: 'Learned modern Flutter and responsive UI patterns through real-world projects.',
+  },
+  {
+    year: '2026',
     title: 'Advanced UI/UX Design Course',
     institute: 'Design+Code',
     desc: 'Explored advanced design systems, motion design, and accessibility best practices.',
@@ -133,51 +155,59 @@ const education: ExperienceType[] = [
 
 const experience: ExperienceType[] = [
   {
-    year: '2021 – 2022',
-    title: 'Frontend Developer Intern',
-    institute: 'PixelForge Studio',
-    desc: 'Built and optimized responsive websites, collaborating closely with designers and backend teams.',
+    year: '2022 – 2025',
+    title: 'Frontend Developer',
+    institute: 'Freelance',
+    desc: 'Built and optimized responsive mobile app',
   },
   {
-    year: '2022 – Present',
-    title: 'UI Engineer',
-    institute: 'Freelance / Remote Work',
-    desc: 'Designed and developed web interfaces for SaaS startups using React, Tailwind, and Figma.',
+    year: '2025 – Present',
+    title: 'Flutter Mobile Developer',
+    institute: 'PT Indo Webhost Kreasi',
+    desc: 'Developing high-performance cross-platform mobile applications and delivering tailored digital solutions for diverse B2B clients.',
   },
 ];
 
 const tools: ToolsType[] = [
   {
     label: 'Figma',
-    imgSrc: '/images/tools/figma.svg',
+    imgSrc: './images/tools/figma.svg',
   },
   {
     label: 'CSS',
-    imgSrc: '/images/tools/css3.svg',
+    imgSrc: './images/tools/css3.svg',
   },
   {
     label: 'Tailwind CSS',
-    imgSrc: '/images/tools/tailwindcss.svg',
+    imgSrc: './images/tools/tailwindcss.svg',
   },
   {
     label: 'React',
-    imgSrc: '/images/tools/react.svg',
+    imgSrc: './images/tools/react.svg',
   },
   {
     label: 'JavaScript',
-    imgSrc: '/images/tools/javascript.svg',
+    imgSrc: './images/tools/javascript.svg',
   },
   {
-    label: 'Node.js',
-    imgSrc: '/images/tools/nodejs.svg',
+    label: 'Flutter',
+    imgSrc: './images/tools/icon_flutter.svg',
   },
   {
-    label: 'Express.js',
-    imgSrc: '/images/tools/expressjs.svg',
+    label: 'Firebase',
+    imgSrc: './images/tools/firebase.svg',
   },
   {
-    label: 'Mongodb',
-    imgSrc: '/images/tools/mongodb.svg',
+    label: 'Dart',
+    imgSrc: './images/tools/dartlang-icon.svg',
+  },
+  {
+    label: 'TypeScript',
+    imgSrc: './images/tools/ts.svg',
+  },
+  {
+    label: 'SqlLite',
+    imgSrc: './images/tools/sqlite-svgrepo-com.svg',
   },
 ];
 
@@ -196,15 +226,20 @@ const services: ServiceType[] = [
   },
   {
     title: 'Web Development',
-    desc: 'Building high-performance, SEO-friendly websites using Next.js, Tailwind, and modern web technologies.',
+    desc: 'Crafting modern web applications with TypeScript, and responsive Tailwind CSS for optimal user experience across all devices.',
     projects: '58 Projects',
     icon: <Globe className='h-6 w-6 text-green-400' />,
   },
   {
-    title: 'Mobile App Design',
-    desc: 'Creating pixel-perfect app interfaces optimized for both iOS and Android devices with smooth usability.',
+    title: 'Mobile App Development',
+
+    desc: 'Expertly building robust, native-quality mobile applications for both iOS and Android from the ground up, ensuring smooth usability and high performance.',
     projects: '21 Projects',
-    icon: <Smartphone className='h-6 w-6 text-green-400' />,
+    icon: (
+      <div className='flex items-center gap-1'>
+        <Smartphone className='h-6 w-6 text-green-400' />
+      </div>
+    ),
   },
   {
     title: 'Product Launch Strategy',
@@ -215,16 +250,16 @@ const services: ServiceType[] = [
 ];
 
 const statsData: StatsType[] = [
+  // {
+  //   number: '30+',
+  //   label: 'Happy Clients',
+  // },
   {
-    number: '30+',
-    label: 'Happy Clients',
-  },
-  {
-    number: '05+',
+    number: '02+',
     label: 'Years Of Experience',
   },
   {
-    number: '50+',
+    number: '6+',
     label: 'Projects Done',
   },
 ];
@@ -254,13 +289,7 @@ const testimonials: TestimonialsType[] = [
 ];
 
 export {
-  socialLinks,
-  projectsData,
   education,
-  experience,
-  tools,
-  services,
-  navLinks,
-  statsData,
-  testimonials,
+  experience, navLinks, projectsData, services, socialLinks, statsData,
+  testimonials, tools
 };

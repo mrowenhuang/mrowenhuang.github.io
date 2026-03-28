@@ -1,11 +1,10 @@
 import { testimonials } from '@/constants';
 import { fadeUp } from '@/lib/animation';
 import {
-  ChevronDownIcon,
   ChevronLeftIcon,
   ChevronRightIcon,
   SpeakerIcon,
-  StarIcon,
+  StarIcon
 } from 'lucide-react';
 import { AnimatePresence, motion } from 'motion/react';
 import { useState } from 'react';

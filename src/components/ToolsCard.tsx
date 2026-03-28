@@ -11,6 +11,7 @@ export const ToolsCard = ({ item }: { item: ToolsType }) => {
       <img
         src={item.imgSrc}
         alt={item.label}
+        className='h-12 w-12'
       />
 
       <p className='font-bold mt-2 '>{item.label}</p>

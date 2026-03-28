@@ -12,7 +12,7 @@ export const Sidebar = () => {
   return (
     <>
       <Sheet>
-        <SheetTrigger asChild>
+        <SheetTrigger>
           <Button
             variant='ghost'
             size='icon'
@@ -58,7 +58,7 @@ export const Sidebar = () => {
                     key={i}
                     className='hover:text-primary border-2 p-2 rounded-full hover:border-primary transition duration-500'
                   >
-                    <Icon className="size-4"/>
+                    <Icon className='size-4' />
                   </a>
                 );
               })}

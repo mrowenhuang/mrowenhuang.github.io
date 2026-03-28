@@ -4,11 +4,13 @@ import tailwindcss from '@tailwindcss/vite';
 import { fileURLToPath } from 'url';
 import path from 'path';
 
-// Menciptakan pengganti __dirname yang aman untuk ES Modules
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 export default defineConfig({
+  // TAMBAHKAN BARIS INI (Penting!)
+  base: '/', 
+  
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {

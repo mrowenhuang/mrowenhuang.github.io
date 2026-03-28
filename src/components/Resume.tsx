@@ -1,9 +1,8 @@
-import { education, experience, services, tools } from '@/constants';
+import { education, experience, tools } from '@/constants';
 import { fadeUp, staggerContainer } from '@/lib/animation';
 import { motion } from 'motion/react';
-import { SectionHeader } from './SectionHeader';
-import { ServiceCard } from './ServiceCard';
 import { ExpCard } from './ExpCard';
+import { SectionHeader } from './SectionHeader';
 import { ToolsCard } from './ToolsCard';
 
 export const Resume = () => {

@@ -1,7 +1,6 @@
 import { navLinks } from '@/constants';
 import { cn } from '@/lib/utils';
 import { useState } from 'react';
-import { text } from 'stream/consumers';
 
 export const FloatingMenu = () => {
   const [active, setActive] = useState('#hero');

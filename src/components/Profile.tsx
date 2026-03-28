@@ -10,7 +10,7 @@ export const Profile = () => {
           <p className='text-sm'>Mobile & Web Frontend Designer & Developer</p>
         </div>
         <img
-          src='/public/avatar.jpg'
+          src='./images/avatar.jpg'
           alt='owen'
           className='lg:w96 rounded-2xl object-cover'
         />
@@ -32,6 +32,8 @@ export const Profile = () => {
               <a
                 href={social.link}
                 key={i}
+                target='_blank'
+                rel='noopener noreferrer'
                 className='hover:text-primary transition duration-500 border-neutral-500 p-2 border-2 rounded-full hover:border-primary'
               >
                 <Icon className='size-6' />
@@ -42,6 +44,12 @@ export const Profile = () => {
         <Button
           className='mt-2'
           size='lg'
+          onClick={() => {
+            const contactSection = document.getElementById('contact');
+            if (contactSection) {
+              contactSection.scrollIntoView({ behavior: 'smooth' });
+            }
+          }}
         >
           Let's Work
         </Button>

@@ -124,6 +124,18 @@ const projectsData: ProjectType[] = [
     ],
     projectLink: 'https://github.com/mrowenhuang/clean-music-app',
   },
+  {
+    imgSrc: './images/e-commerce.png',
+    title: 'E-Commerce Web',
+    tags: [
+      'Fake Api',
+      'React',
+      'Typescript',
+      'Motion',
+      'Shadcn',
+    ],
+    projectLink: 'https://github.com/mrowenhuang/e-commerce',
+  },
 ];
 
 const education: ExperienceType[] = [
